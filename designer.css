@@ -1,299 +1,366 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: o;
-    padding: o;
-    color:black;
-    text-align: center;
-}
-/* first page */
-.page1{
-    padding: 50px;
-    background-image: url(20250402_130155.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-.FHead{
-    display: flex;
-    justify-content: center;
-    
-    
-    
-}
-.topleftLogo {
-    color: white;
-    border:2px;
-    border-style: solid;
-    width: 400px;
-    
-    
-}
-.topleftLogo p{
-    color: white;
-}
 
-.top ul{
-    list-style-type: none;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            text-align: center;
+        }
 
-}
-.top li{
-    float: left;
+        /* First Page */
+        .page1 {
+            padding: clamp(20px, 5vw, 50px);
+            background-image: url(20250402_130155.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+        .FHead {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .topleftLogo {
+            color: white;
+            border: 2px solid white;
+            width: clamp(200px, 40%, 400px);
+        }
+        .topleftLogo p {
+            color: white;
+        }
+        .top ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .top li {
+            float: none; 
+        }
+        .top li a {
+            text-align: center;
+            padding: clamp(10px, 2vw, 50px);
+            text-decoration: none;
+            color: white;
+        }
+        .top li a:hover {
+            background-color: cornflowerblue;
+        }
+        .conMe {
+            border: 2px solid white;
+        }
+        .loremLogo {
+            text-align: center;
+            padding: clamp(50px, 10vw, 100px) 20px;
+        }
+        .lorem {
+            margin-top: clamp(50px, 10vw, 100px);
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            gap: 20px; 
+            padding: 20px;
+            color: white;
+            flex-wrap: wrap; 
+        }
+        .lorem h1 {
+            color: white;
+            font-size: clamp(1.5rem, 5vw, 3rem);
+        }
+        .lorem p {
+            color: white;
+            text-align: justify; 
+        }
+        
+        .dollar {
+            color: black;
+            background: white;
+        }
+        .readM {
+            width: 110px;
+            height: 50px;
+            border: 2px solid white;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+        .apple {
+            max-width: clamp(300px, 50%, 800px); 
+            height: auto; 
+            object-fit: cover; 
+            image-rendering: -webkit-optimize-contrast; 
+            image-rendering: crisp-edges;
+            cursor: pointer;
+            order: 1; 
+        }
+        /* Second Page / About Me */
+        .secondSec {
+            padding: clamp(20px, 5vw, 100px); 
+            background: white;
+        }
+        .SHead {
+            display: flex;
+            color: black;
+            background: white;
+            border-bottom: 3px solid black;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .top4 ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .top4 li {
+            float: none; 
+        }
+        .top4 li a {
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            color: black;
+        }
+        .top4 li a:hover {
+            background-color: cornflowerblue;
+        }
+        .web2 {
+            border: 2px solid black;
+            text-decoration: none;
+        }
+        .aboutMe {
+            color: black;
+        }
+        .ME {
+            background-color: black;
+            color: white;
+        }
+        p {
+            color: #000;
+        }
+        .der {
+            width: clamp(150px, 50%, 300px);
+            height: clamp(150px, 50%, 300px);
+            border-radius: 200px;
+            object-fit: cover;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        .socialMedia {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            height: 50px;
+            flex-wrap: wrap;
+        }
+        .socialMedia img {
+            width: clamp(30px, 5vw, 50px);
+            height: auto;
+            object-fit: contain;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
 
-}
-.top li a{
-    text-align: center;
-    padding: 50px;
-    text-decoration: none;
-    color:white;
+        /* My Service */
+        .service {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(20250402_132840.jpg);
+            padding: clamp(20px, 5vw, 100px);
+        }
+        .service h1 {
+            color: white;
+            font-size: clamp(1.5rem, 5vw, 3rem);
+        }
+        .ser {
+            background-color: white;
+            color: black;
+        }
+        .logo {
+            color: white;
+            border: 3px solid white;
+            border-radius: 15px;
+            padding: 20px;
+            width: clamp(150px, 30%, 200px);
+        }
+        .serviceContainer {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .logo p {
+            color: white;
+        }
+        .logo img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
 
-}
-.top li a:hover{
-    background-color:cornflowerblue;
-    
-}
-.conMe{
-    border: 2px solid white;
+        /* Portfolio */
+        .portfolio {
+            padding: clamp(20px, 5vw, 100px);
+        }
+        .portfolioImages {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .portimg {
+            width: clamp(100px, 25%, 200px);
+            height: clamp(100px, 25%, 200px);
+            align-items: center;
+            background-color: black;
+            margin-top: 16px;
+            border: 3px solid black;
+            object-fit: cover;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        .listNum {
+            align-items: center;
+            padding: 14px;
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .li {
+            text-decoration: none;
+            list-style-type: none;
+            border: 3px solid black;
+            width: 70px;
+            height: 25px;
+        }
+        #ll {
+            background-color: #000;
+            color: white;
+        }
+        .li:hover {
+            background-color: black;
+            color: white;
+        }
 
-}
+        /* Contact */
+        .form {
+            padding: clamp(20px, 5vw, 100px);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(Screenshot_20250402_133142_Chrome.jpg);
+        }
+        .form h2 {
+            color: white;
+            font-size: clamp(1.5rem, 5vw, 3rem);
+        }
+        .form span {
+            background-color: white;
+            color: #000;
+        }
+        .infoForm {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .form form {
+            background: white;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            max-width: clamp(300px, 50%, 400px);
+            margin: 2rem auto;
+        }
+        .form form input, .form form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 3px solid black;
+        }
+        .form button {
+            padding: 10px 0;
+            background: black;
+            border: none;
+            cursor: pointer;
+            color: white;
+            width: 100px;
+        }
+        textarea {
+            height: 80px;
+        }
+        .info p {
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
 
-.loremlogo{
-    text-align: center;
-    padding: 100px 20px;
-    background-image: url("20250402_130155.jpg");
-    
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .FHead, .SHead, .serviceContainer {
+                flex-direction: column;
+                align-items: center;
+            }
+            .top ul, .top4 ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .top li a, .top4 li a {
+                padding: 10px;
+            }
+            .apple {
+                float: none; 
+                margin: 20px auto; 
+            }
+        }
 
-}
-.lorem{margin-top: 100px;
-text-align: justify;
-color: white;
-padding: 20px;
-}
-.lorem h1{
-    color: white;
-}
-.lorem p{
-    color: white;
-}
-.dollar{
-color: black;
-background: white;
-}
-.readM{
-    width: 110px;
-    height: 50px;
-    border: 2px solid white;
-    background: black;
-    color: white;
-}
+        @media (max-width: 768px) {
+            .page1, .secondSec, .service, .portfolio, .form {
+                padding: 20px;
+            }
+            .lorem {
+                margin-top: 50px;
+                padding: 10px;
+            }
+            .portfolioImages {
+                gap: 10px;
+            }
+            .socialMedia {
+                gap: 10px;
+            }
+        }
 
-/* second page / about me */
-.secondSec
-{
-    padding: 100px;
-    background: white;
-}
-.SHead{
-    display: flex;
-    color:black;
-    background: white;
-    border-bottom: 3px solid black;
-    
-}
-.top4 ul {
-    list-style-type: none;
-}
-.top4 li{
-    float: left;
-
-}
-.top4 li a{
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    color:black;
-
-}
-.top4 li a:hover{
-    background-color:cornflowerblue;
-}
-.web2{
-    border: 2px;
-    border-style: solid;
-    text-decoration: none;
-}
-.top4{
-    list-style-type: none;
-}
-
-    
-
-.aboutMe{
- color: black;   
-}
-.ME{
-    background-color: black;
-    color: white;
-    width: 
-}
-
-p{
-    color: #000;
-}
-
-
-.der{
-    width: 300px;
-    height: 300px;
-    border-radius: 200px;
-}
-
-.socialMedia{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    height: 50px;
-}
-
-
-/* my service */
-.service{
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-image: url(20250402_132840.jpg);
-    padding: 100px;
-    
-}
-.service h1{
-    color: white;
-}
-
-.ser{
-    background-color:white;
-    color: black;
-}
-.logo{
-    color: white;
-}
-.serviceContainer{
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-}
-.logo{
-    border: 3px solid white;
-    border-radius: 15px;
-    padding: 20px;
-    width: 200px;}
-.logo p{
-    color: white;
-}
-
-
-/* PORTFOLIO_*/
-.portfolio{
-    padding: 100px;
-}
-
-
-
-.portfolioImages{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    
-}
-
-.portimg{
-    width: 200px;
-    height: 200px;
-    align-items: center;
-    background-color: black;
-    justify-content: center;
-    margin-top: 16px;
-    border: 3px solid black;
-
-
-
-}
-.listNum{
-    align-items: center;
-    padding: 14px;
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    
-}
-.li{
-    text-decoration: none;
-    list-style-type: none;
-    border: 3px solid black;
-    width: 70px;
-    height: 25px;
-    
-
-}
-#ll{
-    background-color: #000;
-    color: white;
-}
-.li:hover{
-    background-color: black;
-}
-
-
-
-/* CONTACT*/
-.form{
-
-    padding: 100px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-image: url(Screenshot_20250402_133142_Chrome.jpg);
-}
-.form h2{
-    color: white;
-}
-.form span{
-    background-color: white;
-    color: #000;
-}
-.infoForm{
-   
-}
-.form form{
-    background: white;
-    padding:25px 50px 75px 25px;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-   
-}
-.form form input, .form form textarea{
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    border: 3px solid black;
-
-}
-.form button{
-    padding: 10px 0;
-    background: black;
-    border: none;
-    cursor: pointer;
-    color: white;
-    width: 100px;
-    
-}
-textarea{
-    height: 80px;
-}
-.info p{
-    color: white;
-}
-footer{
-    text-align: center;
-    padding: 20px;
-}
+        @media (max-width: 480px) {
+            .lorem h1, .service h1, .form h2 {
+                font-size: 1.5rem;
+            }
+            .readM, .form button {
+                width: 100%;
+            }
+            .der {
+                width: 150px;
+                height: 150px;
+            }
+            .socialMedia img {
+                width: 30px;
+            }
+            .portimg {
+                width: 100px;
+                height: 100px;
+            }
+            .apple {
+                max-width: 100%; 
+            }
+        }
